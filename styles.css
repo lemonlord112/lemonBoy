@@ -1,0 +1,102 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-top: 330px;
+  
+}
+
+.btn {
+  background-color: hsl(360, 100%, 100%);
+  border: 3px solid hsl(218, 89%, 00%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: black;
+  outline: none;
+  font-size: large;
+}
+
+.btn:hover {
+  border-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Background Styles Only */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    font-family: Raleway;
+  
+}
+
+.side-links {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.side-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: white;
+  width: 180px;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.side-link-youtube {
+  background-color: red;
+   opacity: 0.5
+
+}
+
+.side-link-text {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.side-link-icon {
+  color: white;
+  font-size: 30px;
+}
