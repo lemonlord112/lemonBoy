@@ -117,11 +117,11 @@ When life gives you lemons, what do you do?`,
     text: `"If life gives you lemons, don't make lemonade! Make life take the lemons back. Get mad! I don't want your damn lemons. What the hell am I suppose to do with these? Demand to see life's manager?! Make life rue the day it thought it could give me lemons!"
     
     you scream at Lemon Boy and squirt the lemon juices into his eyes.
-    (UNFINISHED TREE)
+    
     `,
     options: [
       {
-        text: 'Restart',
+        text: '(UNFINISHED TREE)',
         nextText: -1
       }
     ]
