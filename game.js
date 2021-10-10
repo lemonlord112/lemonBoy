@@ -89,7 +89,7 @@ When life gives you lemons, what do you do?`,
       // nextText: 3
       // },
       {
-        text: 'Try chuck it back',
+        text: 'CHUCK IT BACK',
         nextText: 4
       }
     ]
