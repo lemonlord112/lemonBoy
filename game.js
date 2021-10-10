@@ -42,12 +42,14 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: `Hello world! my name is Lemon Boy. You have clicked on a very special link to me, because this is my first ever JavaScript game! This is a game about me, Lemon Boy, and how I navigate my life  in our chronically burdening society. I hope you can help me find some meaning in my life as you play.
+    text: `Hello world! my name is Lemon Boy. You have clicked on a very special link to me, because this is my first ever JavaScript game! 
 
-    Here's some tips before you start. This is a story adventure game, so be in the mood for reading. Press F11 to go into fullscreen for the full immersive experience. Turn on Lo-fi music while you play. Refresh the page to restart, but I recommend playing the game out until you reach an ending :)
+    This is a STORY ADVENTURE GAME, so don't play if your not in the mood of doing a lot of reading. This is a game about me, Lemon Boy, and how I navigate my life  in our chronically burdening society. I hope you can help me find some meaning in my life as you play.
     
-    Enjoy the time you're about to spend with me <3
+  
+    Tips: Press F11 to go into fullscreen for the full immersive experience. Turn on Lo-fi music while you play. Refresh the page to restart, but I recommend playing the game out until you reach an ending 😄
     
+    Enjoy the time you're about to spend with me 💛
     `,
     options: [
       {
