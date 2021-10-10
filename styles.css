@@ -27,7 +27,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 10px;
-  margin-top: 330px;
+  margin-top: 290px;
   
 }
 
@@ -52,10 +52,10 @@ body {
 
 .img-lemon{
 
-  padding-left: 500;
   width: 120px;
 position: absolute;
 top: 90px;
+right: 910px
 
 
   }
