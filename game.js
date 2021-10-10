@@ -79,16 +79,16 @@ const textNodes = [
     options: [
       {
         text: 'Make lemonade',
-        requiredState: (currentState) => currentState.blueGoo,
-        setState: { blueGoo: false, sword: true },
+        // requiredState: (currentState) => currentState.blueGoo,
+        // setState: { blueGoo: false, sword: true },
         nextText: 3
       },
-      {
-        // text: 'Try chuck it back',
-        // requiredState: (currentState) => currentState.blueGoo,
-        // setState: { blueGoo: false, shield: true },
-        // nextText: 3
-      },
+      // {
+      // text: 'Try chuck it back',
+      // requiredState: (currentState) => currentState.blueGoo,
+      // setState: { blueGoo: false, shield: true },
+      // nextText: 3
+      // },
       {
         text: 'Try chuck it back',
         nextText: 4
