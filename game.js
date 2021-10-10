@@ -42,14 +42,15 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: `Hello world! my name is Lemon Boy. You have clicked on a very special link to me, because this is my first ever JavaScript game! 
+    text: `Hello world! my name is Lemon Boy. This is my first ever JavaScript game! 
 
     This is a STORY ADVENTURE GAME, so don't play if your not in the mood of doing a lot of reading. This is a game about me, Lemon Boy, and how I navigate my life  in our chronically burdening society. I hope you can help me find some meaning in my life as you play.
     
-  
     Tips: Press F11 to go into fullscreen for the full immersive experience. Turn on Lo-fi music while you play. Refresh the page to restart, but I recommend playing the game out until you reach an ending 😄
     
-    Enjoy the time you're about to spend with me 💛
+
+
+    If you want to partner with me on a project, click on the drawing at the top. Otherwise, Enjoy the time you're about to spend with me ❤️
     `,
     options: [
       {
@@ -71,11 +72,9 @@ const textNodes = [
   },
   {
     id: 2,
-    text: `In life, we are given lemons. That's just part of what life is. And lemons suck, they suggest sourness and difficulty. They are anxiety-inducing. They are the result of disappointment and failure.
+    text: `In life, we are given lemons. That's just part of what life is. And lemons suck, they suggest sourness and difficulty. They are anxiety-inducing. They are the result of disappointment and failure. We all go through hardships, and are given two options in the face of adversity.
 
-    Cole Bennett, founder of "Lyrical Lemonade," once gave a Ted Talk about being a glass half full kind of guy. This idea of optimism vs pessimism really resonated with me. We all go through hardships, and are given two options in the face of adversity. So my first question to you is:
-    
-    When life gives you lemons, what do you do?`,
+When life gives you lemons, what do you do?`,
     options: [
       {
         text: 'Make lemonade',
