@@ -2,15 +2,29 @@ const textElement = document.getElementById('text')
 const optionButtonsElement = document.getElementById('option-buttons')
 
 let state = {}
+let textInterval
 
 function startGame() {
   state = {}
   showTextNode(1)
 }
 
+function typeText(text, time) {
+  clearInterval(textInterval);
+  let currentTextIdx = 0;
+
+  textInterval = setInterval(() => {
+    textElement.innerText = text.substring(0, currentTextIdx);
+    currentTextIdx++;
+
+    if (currentTextIdx >= text.length + 1) clearInterval(textInterval);
+  }, time)
+}
+
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
-  textElement.innerText = textNode.text
+
+  typeText(textNode.text, 50, textNode);
   while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild)
   }
