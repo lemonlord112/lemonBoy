@@ -10,7 +10,7 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #000000;
+  background-color: black;
 }
 
 .container {
@@ -21,8 +21,18 @@ body {
   border-radius: 5px;
   color: white;
   font-size:larger;
+  height: 100%;
   line-height: 1.4;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   
+}
+
+.text {
+  min-height: 300px;
+  width: 800px;
 }
 
 .btn-grid {
@@ -37,7 +47,7 @@ body {
   background-color: hsl(360, 100%, 100%);
   border: 3px solid hsl(218, 89%, 00%);
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 5px 35px;
   color: black;
   outline: none;
   font-size:large;
@@ -55,14 +65,9 @@ body {
 
 
 .img-lemon{
-
   width: 120px;
-position:relative;
-top: -360px;
-right: -390px
-
-
-  }
+  position:relative;
+}
 
  
    
@@ -114,6 +119,10 @@ right: -390px
 .side-link-icon {
   color: white;
   font-size: 30px;
+}
+
+#text {
+  min-height: 200px;
 }
 
 
