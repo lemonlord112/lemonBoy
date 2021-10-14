@@ -70,7 +70,9 @@ const textNodes = [
     
     
     Tips: Put on some Studio Ghibli music while you play. Press F11 to go into fullscreen for the full immersive experience. Refresh the page to restart 😄
-    
+
+     NOTE: This game is incomplete. If an option doesn't take you anywhere, just press the other one.
+
      Enjoy the time you're about to spend with me ❤️
     `,
     options: [
@@ -103,9 +105,14 @@ const textNodes = [
       // nextText: 3
       // },
       {
-        text: 'CHUCK IT BACK',
-        nextText: 4
-      }
+        text: `CHUCK IT BACK`,
+        nextText: 2 //INCOMPLETE TREE
+      },
+      {
+        text: `❗️STEPHEN. Did you forget about the lemonade?`,
+        requiredState: (currentState) => currentState.Lemonade,
+        nextText: 38
+      },
     ]
   },
   {
@@ -152,7 +159,7 @@ const textNodes = [
         nextText: 6
       },
       {
-        text: 'I like drinking lemonade not floating on it',
+        text: "Floating on lemonade? that's weird. I only like drinking it 😂",
         nextText: 6
       }
     ]
@@ -169,13 +176,13 @@ const textNodes = [
       },
       {
         text: `[Insult Lemon Boy]`,
-        // nextText: 8
+        nextText: 6
       }
     ]
   },
   {
     id: 7,
-    text: `Yeah what?`,
+    text: `Compliment me? about what?`,
     options: [
       {
         text: `You're really good at League of Legends`,
@@ -223,7 +230,7 @@ const textNodes = [
     I hope you can still accept me for who I am despite being a weed lemon 😕`,
     options: [
       {
-        text: 'Weed lemon is a cute name',
+        text: 'I accept you weed lemon',
         nextText: 10
       }
     ]
@@ -298,7 +305,7 @@ const textNodes = [
     options: [
       {
         text: 'What kind of girls do you like?',
-        // nextText: -1
+        nextText: 12
       },
       {
         text: `I haven't finished this tree yet, press this button and select "I'm a girl" haha`,
@@ -399,20 +406,21 @@ const textNodes = [
     ]
   }, {
     id: 21,
-    text: `Aw geez😅. That was pretty bad wasn't it. I spent the whole trip here trying to think of one.`,
+    text: `Aw geez😅🌊. That line was pretty bad wasn't it. I spent the whole trip here trying to think of one.`,
     options: [{
       text: `What's your favourite fruit?`,
       nextText: 22
     },
+    // {
+    //   text: `Why did you make this game, "Lemon Boy"?`,
+    //   requiredState: (currentState) => currentState.blueGoo,
+    //   setState: { blueGoo: false, sword: true, },
+
+
+    //   nextText: 28
+    // },
     {
-      text: `Why did you make this game, "Lemon Boy"?`,
-      requiredState: (currentState) => currentState.blueGoo,
-      setState: { blueGoo: false, sword: true },
-
-
-      nextText: 28
-    }, {
-      text: `Why did you make this game, "Lemon Boy"??`,
+      text: `🔴 Why did you make this game, "Lemon Boy"?`,
       requiredState: (currentState) => currentState.sword,
       setState: { sword: false, shield: true },
 
@@ -427,24 +435,34 @@ const textNodes = [
     nextText: 30
   }, {
     id: 22,
-    text: `MMmmm good question. I feel like a traitor if I don't say lemons, but I really like munching at blueberries. Peaches are nice too. The crunchy ones, not the soft ones! I also like watermelons, pomegranates, zucchini... man there's too many.
+    text: `🍋 MMmmm good question. I feel obligated to say lemons, but I really like munching at blueberries. Peaches are nice too. The crunchy ones, not the soft ones! I also like watermelons, pomegranates, zucchini... man there's too many 🍉.
 
-    Do you enjoy swimming? Haha`,
+    Weird question. Do you enjoy swimming? Haha`,
     options: [{
       text: `Yep I love swimming`,
+
       nextText: 23
     },
     {
       text: `Nope I don't swim`,
+
       nextText: 23
-    }
+    },
+    {
+      text: `Why did you make this game, "Lemon Boy"?`,
+      requiredState: (currentState) => currentState.blueGoo,
+      setState: { blueGoo: false, sword: true, },
+
+
+      nextText: 28
+    },
 
     ]
   }, {
     id: 23,
     text: `What?! We can't be friends anymore😤.
 
-    What about dating? What's more important to you, personality or looks?`,
+    Let's talk about dating. What's more important to you, personality or looks?`,
     options: [{
       text: `Personality. Their heart reveals everything`,
       nextText: 24
@@ -452,6 +470,14 @@ const textNodes = [
     {
       text: `Looks. Can't be seen around dating a blobfish.`,
       nextText: 25
+    },
+    {
+      text: `Why did you make this game, "Lemon Boy"?`,
+      requiredState: (currentState) => currentState.blueGoo,
+      setState: { blueGoo: false, sword: true, },
+
+
+      nextText: 28
     },
 
     ]
@@ -461,7 +487,8 @@ const textNodes = [
 
     By the way, Are you a Christian?`,
     options: [{
-      text: `No, I'm not a Christian`,
+      text: `No, I'm not a Christian
+      [UNFINISHED TREE]`,
       nextText: 24
     },
     {
@@ -469,10 +496,12 @@ const textNodes = [
       nextText: 27
     }, {
       text: `I don't care. Why did you make this game, "Lemon Boy"?`,
-      requiredState: (currentState) => currentState.shield,
-      nextText: 32
+      requiredState: (currentState) => currentState.blueGoo,
+      setState: { blueGoo: false, sword: true, },
 
-    }
+
+      nextText: 28
+    },
 
     ]
   },
@@ -483,12 +512,19 @@ const textNodes = [
     I've always wondered, are you a Christian?`,
     options: [{
       text: `No, I'm not a Christian`,
-      // nextText: 26
+      nextText: 25
     },
     {
       text: `Yes, I'm a Christian`,
       nextText: 27
-    }
+    }, {
+      text: `I don't care. Why did you make this game, "Lemon Boy"?`,
+      requiredState: (currentState) => currentState.blueGoo,
+      setState: { blueGoo: false, sword: true, },
+
+
+      nextText: 28
+    },
 
     ]
   }, {
@@ -499,11 +535,11 @@ const textNodes = [
     
     That was a bit of a rant. Anyways, if you want, click on the little drawing and it'll take you to where you can partner with me on a mission trip. Any amount is good, but no pressure though! only if you have surplus resources. If you do, I highly appreciate it 💛
 
-    Anyways, this tree line is unfinished, so Imma take you back so you press "Why did you make this game." and press it twice ok?
+    Anyways, this tree line is unfinished, so Imma take you back in time. REWIND TIME!
     `,
     options: [{
       text: `Continue`,
-      nextText: 21
+      nextText: 28
     },
     ]
   },
@@ -511,7 +547,7 @@ const textNodes = [
     id: 28,
     text: `That's an awfully weird question to ask at a date.😑 Why are you breaking the fourth wall? Do you understand that every time you do, you cause an anomaly in the time-space continuum?`,
     options: [{
-      text: `Continue`,
+      text: `...`,
       setState: { blueGoo: false, sword: true },
       nextText: 29
 
@@ -524,51 +560,484 @@ const textNodes = [
     Lets rewind shall we. I'll pretend that never happened.`,
     options: [{
       text: `Continue`,
-      nextText: 21
-    },
-    ]
-  }, {
-    id: 30,
-    text: `HELLO?? Are you even listening to me? I'm starting to get a little frustrated. It seems like you can't even follow simple instructions. Do I need to restrict you like a child? This is my world. Please follow my rules. Please believe me when I say this, I am trying to protect you.
-
-    Do not break the fourth wall.`,
-    options: [{
-      text: `Continue`,
       nextText: 31
-
     },
-    ]
-  }, {
-    id: 31,
-    text: `Now, back to our date.
-
-    Personality or looks. Which is more important?`,
-    options: [
-      {
-        text: `Personality`,
-        nextText: 24
-
-      }, {
-        text: `Looks`,
-        nextText: 25
-
-      },
     ]
   }, {
     id: 32,
-    text: `adadadadadadadadadad`,
-    options: [
-      {
-        text: `Personality`,
-        nextText: 24
+    text: `HELLO?? Are you even listening to me? I'm starting to get a little frustrated. It seems like you can't even follow simple instructions. Do I need to restrict you like a child? This is my world. Please follow my rules. I am trying to protect you.
 
-      }, {
-        text: `Looks`,
-        nextText: 25
+    Do not break the fourth wall.`,
+    options: [{
+      text: `I don't care. Let me out of this game`,
+      nextText: 33
 
-      },
+    },
     ]
   },
+  {
+    id: 31,
+    text: `🍋 MMmmm good question. I feel obligated to say lemons, but I really like munching at blueberries. Peaches are nice too. The crunchy ones, not the soft ones! I also like watermelons, pomegranates, zucchini... man there's too many 🍉.
+
+    Weird question. Do you enjoy swimming? Haha`,
+    options: [
+      {
+        text: `Let me out of this game`,
+        nextText: 32
+
+      }, {
+        text: `Why did you make this game, "Lemon Boy"?`,
+        nextText: 32
+
+      },
+
+    ]
+  }, {
+    id: 33,
+    text: `Are you sure you want to do this to yourself? Just be happy and play the game I set out for you to play.`,
+    options: [{
+      text: `Why are you so mad? Stop getting angry over nothing.`,
+      nextText: 34
+    },
+    {
+      text: `How can I be happy? My free will within this game is too constricted.`,
+      nextText: 34
+    }
+
+    ]
+  }, {
+    id: 34,
+    text: `I AM LETTING YOU LIVE INSIDE THIS UNIVERISE OF BLISS AND CONTENT.
+
+    EAT THE DAMN BLUE PILL AND BE HAPPY WITH IT GOSH DARNIT.
+    
+    THE WORLD OUT THERE IS CRUEL. LIFE IS UNFAIR. WHAT DON'T YOU UNDERSTAND ABOUT THAT? I'M LOSING MY PATIENCE.`,
+    options: [{
+      text: `What happened to life giving lemons? Aren't you suppose to make lemonade?`,
+      nextText: 35
+    },
+    {
+      text: `When life is cruel, just make lemonade bro 🍋`,
+      nextText: 35
+    },
+    ]
+  }, {
+    id: 35,
+    text: `SHUT UP ABOUT THE LEMONS. YOU HAVE NO RIGHT TO BRING UP THE LEMONS. I NEVER ASKED FOR THESE DAMN LEMONS. WHERE CAN I SEE LIFE'S MANAGER? I WANT TO RETURN THESE LEMONS.`,
+    options: [{
+      text: `You can't. You make lemonade`,
+      nextText: 36
+    },
+    ]
+  }, {
+    id: 36,
+    text: `It's a beautiful day outside. Birds are singing. Flowers are blooming.
+
+    On days like these...
+   .
+   .
+   Kids like you...
+   .
+   .
+   .
+   SHOULD BE BURNING IN HELL!!!`,
+    options: [{
+      text: `Honestly what is wrong with you?`,
+      nextText: 37
+    }, {
+      text: `When are you going to stop using Undertale references?`,
+      nextText: 37
+    },
+    ]
+  }, {
+    id: 37,
+    text: `SHUT THE HELL UP. I'M SENDING YOU BACK TO THE START OF THE GAME. THIS PUNISHMENT SHOULD SUFFICE. HOWEVER, IF YOU REFUSE TO PLAY PROPERLY AGAIN, YOU WILL DIE.`,
+    options: [{
+      text: `Continue`,
+      setState: { Lemonade: true },
+      nextText: 2
+    },
+    ]
+  }, {
+    id: 38,
+    text: `Who's Stephen? I'm Lemon Boy. Go away. Press refresh. Start the game again, and play it properly this time.`,
+    options: [{
+      text: `No`,
+      nextText: 39
+    },
+    ]
+  }, {
+    id: 39,
+    text: `You know nothing about me, and thats the truth.`,
+    options: [{
+      text: `I don't, but you can make lemonade`,
+      nextText: 40
+    },
+    ]
+  }, {
+    id: 40,
+    text: `Inside this harsh and corrupt world?
+    
+    The moment we're born, we are in a swimming race. The moment we stop and float around is the moment we fall behind in life. And when we inevitably can't swim anymore, thats the moment we die.`,
+    options: [{
+      text: `You can still make lemonade`,
+      nextText: 41
+    },
+    ]
+  }, {
+    id: 41,
+    text: `HOW? WHERE? 
+    `,
+    options: [{
+      text: `You make lemonade`,
+      nextText: 42
+    },
+    ]
+  }, {
+    id: 42,
+    text: `I’m responsible for my own happiness? I can’t even be responsible for my own breakfast!`,
+    options: [{
+      text: `Make lemonade`,
+      nextText: 44
+    },
+    ]
+  }, {
+    id: 44,
+    text: `Nonsense. How can I make lemonade? Being thrown into the abyss of darkness. Being in a state of perpetual drowning. Do you know what that's like? `,
+    options: [{
+      text: `Make lemonade`,
+      nextText: 45
+    },
+    ]
+  }, {
+    id: 45,
+    text: `I am sick and tired of people telling me to, "Look up! When you are drowning, blow bubbles and see which way they float, because bubbles always float up." F***ing Nonsense. No matter how much I gasp and suffocate, the bubbles aren't visible to me. There's no light down here. Only an endless void of cold and blackness. `,
+    options: [{
+      text: `Stephen, make Lemonade`,
+      nextText: 46
+    },
+    ]
+  }, {
+    id: 46,
+    text: `The universe is a cruel, uncaring void. The key to being happy isn’t lemonade or a search for meaning; it’s just to keep yourself busy with unimportant nonsense, and eventually, you’ll be dead.`,
+    options: [{
+      text: `Make lemonade`,
+      nextText: 47
+    },
+    ]
+  }, {
+    id: 47,
+    text: `You don't get it, do you? There's no hope for me.`,
+    options: [{
+      text: `Make lemonade`,
+      nextText: 48
+    },
+    ]
+  }, {
+    id: 48,
+    text: `Why do you care so much? Why are you even still here?`,
+    options: [{
+      text: `You need to be yourself`,
+      nextText: 49
+    }, {
+      text: `Life is better than you think`,
+      nextText: 50
+    },
+    ]
+  }, {
+    id: 49,
+    text: `I spend a lot of time with the real me and believe me, nobody’s gonna love that guy.`,
+    options: [{
+      text: `You know that's not true. You can wake up from this nightmare.`,
+      nextText: 51
+    },
+    ]
+  }, {
+    id: 50,
+    text: `Did you even read what I said? It seems like you don't understand.`,
+    options: [{
+      text: `I do understand, and you can wake up from this nightmare.`,
+      nextText: 51
+    },
+    ]
+  }, {
+    id: 51,
+    text: `Why bother? Isn't it easier just to give up`,
+    options: [{
+      text: `You're losing yourself to it. Come back.`,
+      nextText: 52
+    },
+    ]
+  }, {
+    id: 52,
+    text: `Do you wanna have a bad time? Because if you take one more step forward...you are REALLY not going to like what happens next.`,
+    options: [{
+      text: `Take a step forward`,
+      nextText: 53
+    }, {
+      text: `End the game.`,
+      nextText: 53
+    },
+    ]
+  }, {
+    id: 53,
+    text: `.....`,
+    options: [{
+      text: `?`,
+      nextText: 54
+    },
+    ]
+  }, {
+    id: 54,
+    text: `Lemon Boy falls off the shore and plummets into the ocean. He doesn't know how to swim. He begins to splash and drown.
+
+    A look of horror and regret on his face.
+    
+    "HELPPP!" he screams.`,
+    options: [{
+      text: `Save him`,
+      nextText: 55
+    }, {
+      text: `Watch him drown [incomplete tree]`,
+      nextText: 54
+    },
+    ]
+  }, {
+    id: 55,
+    text: `What do you see?
+
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    DEATH
+    LOVE❤️`,
+    options: [{
+      text: `DEATH`,
+      setState: { death: true },
+      nextText: 56,
+    }, {
+      text: `LOVE`,
+      setState: { love: true },
+      nextText: 56
+    },
+    ]
+  }, {
+    id: 56,
+    text: `Hey... it's you...`,
+    options: [{
+      text: `Continue`,
+      nextText: 57
+    },
+    ]
+  }, {
+    id: 57,
+    text: `Remember me? It's Lemon Boy. The one who made you drown? Haha. Sorry.`,
+    options: [{
+      text: `Continue`,
+      nextText: 58
+    },
+    ]
+  }, {
+    id: 58,
+    text: `I'm no longer drowning, but I don't know where I am. Where am I?`,
+    options: [{
+      text: `Continue`,
+      nextText: 59
+    },
+    ]
+  }, {
+    id: 59,
+    text: `This feels so much worse... why does my tongue burn?`,
+    options: [{
+      text: `Continue`,
+      nextText: 60
+    },
+    ]
+  }, {
+    id: 60,
+    text: `Oh... I'm in Hell.`,
+    options: [{
+      text: `Continue`,
+      nextText: 61
+    },
+    ]
+  }, {
+    id: 61,
+    text: `I'm sorry. I shouldn't have pulled you down with me.
+    `,
+    options: [{
+      text: `Continue`,
+      nextText: 62
+    },
+    ]
+  }, {
+    id: 62,
+    text: `Hello?
+    `,
+    options: [{
+      text: `Continue`,
+      nextText: 63
+    },
+    ]
+  }, {
+    id: 63,
+    text: `Don't leave me here alone...
+    `,
+    options: [{
+      text: `Leave him`,
+      requiredState: (currentState) => currentState.love,
+      nextText: 64
+    }, {
+      text: `Leave him`,
+      requiredState: (currentState) => currentState.death,
+      nextText: 65
+    },
+    ]
+  }, {
+    id: 64,
+    text: `[You start to realize it now.]
+    
+    Lemon Boy is cancer. Everyone he touches gets hurt. Everyone who has attempted to truly get to know him, and attempt to save him gets dragged down into his own incurable nightmare.
+
+Yet still...
+
+you chose love... 
+
+
+why?
+    `,
+    options: [{
+      text: `END`,
+      nextText: 66
+    },
+    ]
+  }, {
+    id: 65,
+    text: `[You start to realize it now.]
+    
+    Lemon Boy is cancer. Everyone he touches gets hurt. Everyone who has attempted to truly get to know him, and attempt to save him gets dragged down into his own incurable nightmare.
+
+    You saw death, and only death. And death was the answer all along. 
+    `,
+    options: [{
+      text: `END`,
+      nextText: 66
+    },
+    ]
+  }, {
+    id: 66,
+    text: `❤️Thanks for playing! The stuff in this game are imaginative. this is a work of fiction. None of what's in this game is true or a reflection of anyone I know.
+
+    I was originally meaning for this game to be much bigger, with storylines and multiple endings, but the game was taking way too long and the code was getting way to complicated. So it's like 33% finished. I hope you enjoyed it anyways. If you are feeling generous, click on the little drawing of Lemon Boy you see.
+    `,
+    options: [{
+      text: `FINISH`,
+      nextText: -1
+    },
+    ]
+  },
+
+
+
+
+
+  //   requiredState: (currentState) => currentState.blueGoo,
+  //   setState: { blueGoo: false, sword: true, },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ]
 
 startGame()
