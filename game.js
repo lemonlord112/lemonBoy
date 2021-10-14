@@ -69,7 +69,7 @@ const textNodes = [
     This is a STORY ADVENTURE GAME, if you're not in the mood for reading, don't play. This is a game about me, Lemon Boy, and how I navigate my life in a chronically burdening society. I hope you can help me find some meaning in my life as you play.
     
     
-    Tips: Put on some Studio Ghibli music while you play. Press F11 to go into fullscreen for the full immersive experience. Refresh the page to restart 😄
+    Tips: This game only works on browser. Press F11 to go into fullscreen for the full immersive experience. Put on some Studio Ghibli music while you play. Refresh the page to restart 😄
 
      NOTE: This game is incomplete. If an option doesn't take you anywhere, just press the other one.
 
@@ -994,7 +994,7 @@ why?
     I was originally meaning for this game to be much bigger, with storylines and multiple endings, but the game was taking way too long and the code was getting way to complicated. So it's like 33% finished. I hope you enjoyed it anyways. If you are feeling generous, click on the little drawing of Lemon Boy you see.
     `,
     options: [{
-      text: `FINISH`,
+      text: `Restart`,
       nextText: -1
     },
     ]
