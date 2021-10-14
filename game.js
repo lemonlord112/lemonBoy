@@ -71,9 +71,11 @@ const textNodes = [
     
     Tips: This game only works on browser. Press F11 to go into fullscreen for the full immersive experience. Put on some Studio Ghibli music while you play. Refresh the page to restart 😄
 
-     NOTE: This game is incomplete. If an option doesn't take you anywhere, just press the other one.
 
      Enjoy the time you're about to spend with me ❤️
+
+     
+     [NOTE: THIS GAME IS INCOMPLETE. IF A TREE DOESN'T WORK, CHOOSE ONE THAT DOES]
     `,
     options: [
       {
