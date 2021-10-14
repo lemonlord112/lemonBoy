@@ -68,14 +68,12 @@ const textNodes = [
 
     This is a STORY ADVENTURE GAME, if you're not in the mood for reading, don't play. This is a game about me, Lemon Boy, and how I navigate my life in a chronically burdening society. I hope you can help me find some meaning in my life as you play.
     
-    
     Tips: This game only works on browser. Press F11 to go into fullscreen for the full immersive experience. Put on some Studio Ghibli music while you play. Refresh the page to restart 😄
 
-
-     Enjoy the time you're about to spend with me ❤️
+    Enjoy the time you're about to spend with me ❤️
 
      
-     [NOTE: THIS GAME IS INCOMPLETE. IF A TREE DOESN'T WORK, CHOOSE ONE THAT DOES]
+     [NOTE: This game is incomplete. If a tree doesn't work, pick one that does.]
     `,
     options: [
       {
