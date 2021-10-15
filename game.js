@@ -437,14 +437,14 @@ const textNodes = [
     id: 22,
     text: `🍋 MMmmm good question. I feel obligated to say lemons, but I really like munching at blueberries. Peaches are nice too. The crunchy ones, not the soft ones! I also like watermelons, pomegranates, zucchini... man there's too many 🍉.
 
-    Weird question. Do you enjoy swimming? Haha`,
+    Weird question. Do you enjoy going to the aquarium?`,
     options: [{
-      text: `Yep I love swimming`,
+      text: `Yep I love the aquarium`,
 
       nextText: 23
     },
     {
-      text: `Nope I don't swim`,
+      text: `Nope`,
 
       nextText: 23
     },
@@ -460,7 +460,7 @@ const textNodes = [
     ]
   }, {
     id: 23,
-    text: `What?! We can't be friends anymore😤.
+    text: `OOOohh. I love the aquarium. Sometimes I wish I can be breathe underwater and swim among the fishes.
 
     Let's talk about dating. What's more important to you, personality or looks?`,
     options: [{
