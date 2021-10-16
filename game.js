@@ -73,7 +73,7 @@ const textNodes = [
     Enjoy the time you're about to spend with me ❤️
 
      
-     [NOTE: This game is incomplete. If a tree doesn't work, pick one that does.]
+     [NOTE: This game is incomplete. For the first half of the game, only the left option works.]
     `,
     options: [
       {
@@ -131,7 +131,11 @@ const textNodes = [
         text: `It's about staying optimistic and having a positive can-do attitude in life.`,
 
         nextText: 3
-      }
+      } ,{
+        text: `❗️STEPHEN. Did you forget about the lemonade?❗️`,
+        requiredState: (currentState) => currentState.Lemonade,
+        nextText: 38
+      },
     ]
   },
   {
@@ -444,17 +448,17 @@ const textNodes = [
       nextText: 23
     },
     {
-      text: `Nope`,
+      text: `Nope, I haven't been in a while`,
 
       nextText: 23
     },
     {
-      text: `Why did you make this game, "Lemon Boy"?`,
+      text: `Why did you make this game?`,
       requiredState: (currentState) => currentState.blueGoo,
       setState: { blueGoo: false, sword: true, },
 
 
-      nextText: 28
+      nextText: 69 
     },
 
     ]
@@ -473,9 +477,7 @@ const textNodes = [
     },
     {
       text: `Why did you make this game, "Lemon Boy"?`,
-      requiredState: (currentState) => currentState.blueGoo,
-      setState: { blueGoo: false, sword: true, },
-
+    
 
       nextText: 28
     },
@@ -496,8 +498,7 @@ const textNodes = [
       nextText: 27
     }, {
       text: `I don't care. Why did you make this game, "Lemon Boy"?`,
-      requiredState: (currentState) => currentState.blueGoo,
-      setState: { blueGoo: false, sword: true, },
+  
 
 
       nextText: 28
@@ -519,8 +520,7 @@ const textNodes = [
       nextText: 27
     }, {
       text: `I don't care. Why did you make this game, "Lemon Boy"?`,
-      requiredState: (currentState) => currentState.blueGoo,
-      setState: { blueGoo: false, sword: true, },
+    
 
 
       nextText: 28
@@ -531,14 +531,12 @@ const textNodes = [
     id: 27,
     text: `Yoooo that's lit!
 
-    Same. My Christian faith is something I've been trying to take more seriously this year, especially growing up as a long time atheist. Being a Christian is a pretty big struggle aye😅? I still have my doubts, I'm sinning far too often, I struggle to wake up on Sundays let alone bring my ass to church, and I question God when I feel like I get hurt undeservingly. But seeing the sacrifices my Christian brothers go through and their high level of faith honestly lights me up.
+    Same. My Christian faith is something I've been trying to take more seriously this year, especially growing up as a long time atheist. Being a Christian is a pretty big struggle aye😅? I still have doubts, I'm sinning like a madlad, I struggle to wake up on Sundays let alone bring my ass to church, and I question God when I feel like I get hurt undeservingly. But seeing the sacrifices my Christian brothers go through and their high level of faith honestly lights me up.
     
     That was a bit of a rant. Anyways, if you want, click on the little drawing and it'll take you to where you can partner with me on a mission trip. Any amount is good, but no pressure though! only if you have surplus resources. If you do, I highly appreciate it 💛
-
-    Anyways, this tree line is unfinished, so Imma take you back in time. REWIND TIME!
     `,
     options: [{
-      text: `Continue`,
+      text: `Why did you make this game, Lemon Boy?`,
       nextText: 28
     },
     ]
@@ -577,9 +575,7 @@ const textNodes = [
   },
   {
     id: 31,
-    text: `🍋 MMmmm good question. I feel obligated to say lemons, but I really like munching at blueberries. Peaches are nice too. The crunchy ones, not the soft ones! I also like watermelons, pomegranates, zucchini... man there's too many 🍉.
-
-    Weird question. Do you enjoy swimming? Haha`,
+    text: `Back to our date. What kind of music do you like?`,
     options: [
       {
         text: `Let me out of this game`,
@@ -713,7 +709,7 @@ const textNodes = [
     id: 45,
     text: `I am sick and tired of people telling me to, "Look up! When you are drowning, blow bubbles and see which way they float, because bubbles always float up." F***ing Nonsense. No matter how much I gasp and suffocate, the bubbles aren't visible to me. There's no light down here. Only an endless void of cold and blackness. `,
     options: [{
-      text: `Stephen, make Lemonade`,
+      text: `Lemon Boy, make Lemonade`,
       nextText: 46
     },
     ]
@@ -764,7 +760,7 @@ const textNodes = [
     id: 51,
     text: `Why bother? Isn't it easier just to give up`,
     options: [{
-      text: `You're losing yourself to it. Come back.`,
+      text: `You're losing yourself.`,
       nextText: 52
     },
     ]
@@ -802,11 +798,20 @@ const textNodes = [
       nextText: 54
     },
     ]
-  }, {
+  },{
     id: 55,
+    text: `You jump in the water with Lemon Boy, attempting to keep him afloat. You realize your mistake. Lemon Boy begins to pull and grab at you. You can't communicate to him that he's pulling you down with him. It's his natural instincts to want to survive.
+
+    No matter how much you struggle, Lemon Boy tugs at your limbs. You both begin to drown.`,
+    options: [{
+      text: `.`,
+      nextText: 71
+    },
+    ]
+  }, {
+    id: 71,
     text: `What do you see?
 
-    DEATH
     DEATH
     DEATH
     DEATH
@@ -910,7 +915,7 @@ const textNodes = [
     ]
   }, {
     id: 59,
-    text: `This feels so much worse... why does my tongue burn?`,
+    text: `This feels so much worse... why does it burn...`,
     options: [{
       text: `Continue`,
       nextText: 60
@@ -980,7 +985,7 @@ why?
     
     Lemon Boy is cancer. Everyone he touches gets hurt. Everyone who has attempted to truly get to know him, and attempt to save him gets dragged down into his own incurable nightmare.
 
-    You saw death, and only death. And death was the answer all along. 
+    You saw death, and death was the answer all along. 
     `,
     options: [{
       text: `END`,
@@ -1001,7 +1006,16 @@ why?
   },
 
 
-
+  {
+    id: 69,
+    text: `Game? What game? You're funny😆. Anyways, try not ask me this question again 👻.
+    `,
+    options: [{
+      text: `Fine. I love the aquarium`,
+      nextText: 23
+    },
+    ]
+  },
 
 
   //   requiredState: (currentState) => currentState.blueGoo,
