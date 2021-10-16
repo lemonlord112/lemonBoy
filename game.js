@@ -530,7 +530,7 @@ const textNodes = [
   }, {
     id: 27,
     text: `Yoooo that's lit!
-    
+
     `,
     options: [{
       text: `Why did you make this game, Lemon Boy?`,
@@ -928,7 +928,7 @@ const textNodes = [
     ]
   }, {
     id: 61,
-    text: `I'm sorry. I shouldn't have pulled you down with me.
+    text: `How can you hear me from up there? I'm sorry. I shouldn't have pulled you down with me.
     `,
     options: [{
       text: `Continue`,
