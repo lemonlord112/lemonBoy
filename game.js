@@ -68,7 +68,7 @@ const textNodes = [
 
     This is a STORY ADVENTURE GAME, if you're not in the mood for reading, don't play. This is a game about me, Lemon Boy, and how I navigate my life in a chronically burdening society. I hope you can help me find some meaning in my life as you play.
     
-    Tips: This game only works on browser. Press F11 to go into fullscreen for the full immersive experience. Put on some Studio Ghibli music while you play. Refresh the page to restart 😄
+    Tips: This game only works on browser. Press F11 to go into fullscreen for the full immersive experience. Refresh the page to restart 😄
 
     Enjoy the time you're about to spend with me ❤️
 
@@ -952,11 +952,11 @@ const textNodes = [
     text: `Don't leave me here alone...
     `,
     options: [{
-      text: `Leave him`,
+      text: `Leave him alone`,
       requiredState: (currentState) => currentState.love,
       nextText: 64
     }, {
-      text: `Leave him`,
+      text: `Leave him alone`,
       requiredState: (currentState) => currentState.death,
       nextText: 65
     },
@@ -1020,6 +1020,9 @@ why?
 
   //   requiredState: (currentState) => currentState.blueGoo,
   //   setState: { blueGoo: false, sword: true, },
+
+
+
 
 
 
