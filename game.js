@@ -530,10 +530,7 @@ const textNodes = [
   }, {
     id: 27,
     text: `Yoooo that's lit!
-
-    Same. My Christian faith is something I've been trying to take more seriously this year, especially growing up as a long time atheist. Being a Christian is a pretty big struggle aye😅? I still have doubts, I'm sinning like a madlad, I struggle to wake up on Sundays let alone bring my ass to church, and I question God when I feel like I get hurt undeservingly. But seeing the sacrifices my Christian brothers go through and their high level of faith honestly lights me up.
     
-    That was a bit of a rant. Anyways, if you want, click on the little drawing and it'll take you to where you can partner with me on a mission trip. Any amount is good, but no pressure though! only if you have surplus resources. If you do, I highly appreciate it 💛
     `,
     options: [{
       text: `Why did you make this game, Lemon Boy?`,
@@ -996,7 +993,7 @@ why?
     id: 66,
     text: `❤️Thanks for playing! The stuff in this game are imaginative. this is a work of fiction. None of what's in this game is true or a reflection of anyone I know.
 
-    I was originally meaning for this game to be much bigger, with storylines and multiple endings, but the game was taking way too long and the code was getting way to complicated. So it's like 33% finished. I hope you enjoyed it anyways. If you are feeling generous, click on the little drawing of Lemon Boy you see.
+    I was originally meaning for this game to way longer, with storylines and multiple endings, but the game was taking way too long and the code was getting way to complicated. So it's like 33% finished. I hope you enjoyed it anyways. If you are feeling generous, click on the little drawing of Lemon Boy you see.
     `,
     options: [{
       text: `Restart`,
