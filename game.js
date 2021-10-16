@@ -237,21 +237,21 @@ const textNodes = [
   },
   {
     id: 10,
-    text: `Just wondering, how well do you know me BTW?`,
+    text: `Do you want to be my friend?`,
     options: [
       {
-        text: `I'd say we're pretty close`,
+        text: `We're already close friends idiot dummy`,
         nextText: 11
       },
       {
-        text: `We vibe but ain't close`,
+        text: `Yeah sure!`,
         nextText: 11
       }
     ]
   },
   {
     id: 11,
-    text: `I see😊. I really value relationships so I hope we can grow even closer.`,
+    text: `Oh yay 😊. I hope we can grow closer.`,
     options: [
       {
         text: `Do you want to go on a date with me then?`,
@@ -873,7 +873,7 @@ const textNodes = [
     DEATH
     DEATH
     DEATH
-    LOVE❤️`,
+    LOVE🤍`,
     options: [{
       text: `DEATH`,
       setState: { death: true },
