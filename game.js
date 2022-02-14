@@ -62,7 +62,7 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: `Hello world! my name is Lemon Boy. This is my first ever JavaScript game!
+    text: `Hello world! My name is Lemon Boy. This is my first ever JavaScript game!
     This is a STORY ADVENTURE GAME, if you're not in the mood for reading, don't play. This is a game about me, Lemon Boy, and how I navigate my life in a chronically burdening society. I hope you can help me find some meaning in my life as you play.
     
     Tips: This game only works on browser. Press F11 to go into fullscreen for the full immersive experience. Refresh the page to restart 😄
